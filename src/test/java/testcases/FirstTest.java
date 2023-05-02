@@ -18,13 +18,7 @@ public class FirstTest extends BaseTest{
     String urlBankOfAmerica = "https://secure.bankofamerica.com/secure-mycommunications/public/appointments/?marketingCode=NEWHP_ECHMPG";
     String btnAccount = "//span[text()='Account']";
     String btnSignIn = "//a[@data-lid='ubr_mby_signin_b']";
-
-
-
-    @Test
-    public void openWebsite() {
-        driver.get(urlBestBuy);
-    }
+    
 
     @Test
     public void openSignInPage() throws InterruptedException {
