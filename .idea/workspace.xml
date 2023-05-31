@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70062fc9-b9dc-4371-8c73-e74b7c248568" name="Changes" comment="" />
+    <list default="true" id="70062fc9-b9dc-4371-8c73-e74b7c248568" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v113_4_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/DataStoragePractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/DriverInteractions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/JavaAndSeleniumPractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_auto_common_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_auto_common_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_0_1_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_json_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_json_4_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/FirstTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,19 +57,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/krystynasylyvonchyk/Desktop/SeleniumFramework&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/krystynasylyvonchyk/Desktop/SeleniumFramework",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.FirstTest.fillEmailAndPasswordFields">
-    <configuration name="FirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dsyly\OneDrive\Documents\GitHub\SeleniumFramework\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.DriverInteractions.test3">
+    <configuration name="DriverInteractions.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -56,25 +84,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.FirstTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.fillEmailAndPasswordFields" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.FirstTest" />
-      <option name="METHOD_NAME" value="fillEmailAndPasswordFields" />
+      <option name="MAIN_CLASS_NAME" value="testcases.DriverInteractions" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,7 +93,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.openSignInPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DriverInteractions.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.DriverInteractions" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DriverInteractions.test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.DriverInteractions" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.explicitWait" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.FirstTest" />
-      <option name="METHOD_NAME" value="openSignInPage" />
+      <option name="METHOD_NAME" value="explicitWait" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.openWebsite" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.fillEmailAndPasswordFieldsAndPressEnter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -110,25 +157,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.FirstTest" />
-      <option name="METHOD_NAME" value="openWebsite" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaMethodsTest.fillEmailAndPasswordFields" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.JavaMethodsTest" />
-      <option name="METHOD_NAME" value="fillEmailAndPasswordFields" />
+      <option name="METHOD_NAME" value="fillEmailAndPasswordFieldsAndPressEnter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FirstTest.fillEmailAndPasswordFields" />
-        <item itemvalue="TestNG.FirstTest.openSignInPage" />
-        <item itemvalue="TestNG.JavaMethodsTest.fillEmailAndPasswordFields" />
-        <item itemvalue="TestNG.FirstTest.openWebsite" />
-        <item itemvalue="TestNG.FirstTest" />
+        <item itemvalue="TestNG.DriverInteractions.test3" />
+        <item itemvalue="TestNG.DriverInteractions.test2" />
+        <item itemvalue="TestNG.DriverInteractions.test1" />
+        <item itemvalue="TestNG.FirstTest.fillEmailAndPasswordFieldsAndPressEnter" />
+        <item itemvalue="TestNG.FirstTest.explicitWait" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +185,21 @@
       <updated>1680202499099</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/JavaAndSeleniumPractise.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/FirstTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

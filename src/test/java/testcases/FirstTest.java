@@ -4,11 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageobjects.HomePage;
 import pageobjects.SignInPage;
+
+import java.time.Duration;
 
 public class FirstTest extends BaseTest{
 
@@ -38,16 +42,15 @@ public class FirstTest extends BaseTest{
         homePage.clickSignIn();
         signInPage.fillTheSignInForm();
     }
-
     @Test
-    public void fillEmailAndPasswordFieldsAndPressEnter() throws InterruptedException {
+    public void fillEmailAndPasswordFieldsAndPressEnter() {
 
         driver.get(urlBestBuy);
 
         driver.findElement(By.xpath(btnAccount)).click();
-        Thread.sleep(1000);
+        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(20));
+        waitForDropdownToLoad.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Create Account']")));
         driver.findElement(By.xpath(btnSignIn)).click();
-
 
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys("email@sdd.ut");
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("password");
