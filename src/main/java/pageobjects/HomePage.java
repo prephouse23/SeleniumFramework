@@ -2,6 +2,11 @@ package pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HomePage extends BaseMain{
@@ -11,13 +16,27 @@ public class HomePage extends BaseMain{
     }
 
     String urlBestBuy = "http://bestbuy.com";
-    String btnAccount = "//span[text()='Account']";
-    String btnSignIn = "//a[@data-lid='ubr_mby_signin_b']";
+    String skuCardsLocator = "//div[@data-testid='sku-card']/a/p";
 
-    public void clickSignIn() throws InterruptedException {
+    public void openHomePage(){
         driver.get(urlBestBuy);
-        driver.findElement(By.xpath(btnAccount)).click();
-        Thread.sleep(5000);
-        driver.findElement(By.xpath(btnSignIn)).click();
+    }
+
+    public void ValidateSkuCards(){
+        WebElement element = driver.findElement(By.xpath(skuCardsLocator));
+        System.out.println(element.getText());
+        System.out.println("__________________________");
+        List<WebElement> skuCards = driver.findElements(By.xpath(skuCardsLocator));
+        int listSize = skuCards.size();
+        boolean listHasElements = listSize > 0;
+        System.out.println(listHasElements);
+        if (listHasElements) {
+            for (int i = 0; i < listSize; i++) {
+                System.out.println(i + ": " + skuCards.get(i).getText());
+                System.out.println(i + ": " + skuCards.get(i).getText().contains("LG"));
+            }
+        } else {
+            System.out.println("no elements were located");
+        }
     }
 }

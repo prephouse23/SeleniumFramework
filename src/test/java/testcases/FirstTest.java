@@ -25,18 +25,6 @@ public class FirstTest extends BaseTest{
     
 
     @Test
-    public void openSignInPage() throws InterruptedException {
-
-        homePage.clickSignIn();
-    }
-
-    @Test
-    public void fillEmailAndPasswordFields() throws InterruptedException {
-
-        homePage.clickSignIn();
-        signInPage.fillTheSignInForm();
-    }
-    @Test
     public void fillEmailAndPasswordFieldsAndPressEnter() {
 
         driver.get(urlBestBuy);

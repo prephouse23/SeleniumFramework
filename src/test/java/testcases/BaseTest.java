@@ -18,7 +18,6 @@ import java.time.Duration;
 import java.util.Optional;
 
 public class BaseTest {
-
     WebDriver driver;
     HomePage homePage;
     SignInPage signInPage;
@@ -26,8 +25,7 @@ public class BaseTest {
 
     @BeforeTest
     public void startDriver() {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dsyly\\IdeaProjects\\TestProject\\src\\test\\resources\\executables\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dsyly\\OneDrive\\Documents\\GitHub\\SeleniumFramework\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/dmytrosylyvonchyk/Documents/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
@@ -40,7 +38,7 @@ public class BaseTest {
 
     @AfterTest
     public void closeBrowser() {
-//        driver.quit();
+        driver.quit();
     }
 
 }
