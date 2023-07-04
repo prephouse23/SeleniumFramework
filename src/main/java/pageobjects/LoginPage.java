@@ -19,7 +19,6 @@ public class LoginPage extends BaseMain{
     public String rememberMeId = "cia-remember-me";
     protected String rememberMebtn ="//label[@for='cia-remember-me']";
 
-
     public void fillUpCredentials(String email, String password, boolean rememberMe){
         driver.findElement(By.xpath(emailTxtField)).sendKeys(email);
         driver.findElement((passwordInput)).sendKeys(password);
