@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import pageobjects.HomePage;
 import pageobjects.SignInPage;
 
+import java.sql.SQLException;
 import java.time.Duration;
 
 public class FirstTest extends BaseTest{
@@ -30,7 +31,7 @@ public class FirstTest extends BaseTest{
         driver.get(urlBestBuy);
 
         driver.findElement(By.xpath(btnAccount)).click();
-        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(20));
+        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(10));
         waitForDropdownToLoad.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Create Account']")));
         driver.findElement(By.xpath(btnSignIn)).click();
 
@@ -42,17 +43,18 @@ public class FirstTest extends BaseTest{
     @Test
     public void fillEmailAndPasswordFieldsAndValidateError() throws InterruptedException {
 
-        driver.get(urlBestBuy);
+        driver.get("https://test.my-fork.com/login");
 
-        driver.findElement(By.xpath(btnAccount)).click();
-        Thread.sleep(1000);
-        driver.findElement(By.xpath(btnSignIn)).click();
+//        driver.findElement(By.xpath(btnAccount)).click();
+//        Thread.sleep(1000);
+//        driver.findElement(By.xpath(btnSignIn)).click();
 
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys("email@sdd.ut");
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("password");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(Keys.ENTER);
+        driver.findElement(By.xpath("//button[text()='Log In']")).sendKeys(Keys.ENTER);
         Thread.sleep(3000);
-        System.out.println(driver.findElement(By.xpath("//div[@aria-label='Error']")).isDisplayed());
+//        System.out.println(driver.findElement(By.xpath("//div[@aria-label='Error']")).isDisplayed());
+        System.out.println();
     }
 
     @Test
