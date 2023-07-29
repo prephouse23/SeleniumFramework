@@ -30,7 +30,7 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver", "/home/vboxuser/Documents/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        ChromeOptions.addArguments("--no-sandbox");
+        options.addArguments("--no-sandbox");
         driver = new ChromeDriver(options);
         homePage = new HomePage(driver);
         signInPage = new SignInPage(driver);
