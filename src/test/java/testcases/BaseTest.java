@@ -27,7 +27,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void startDriver() throws IOException {
-        System.setProperty("webdriver.chrome.driver", "/Users/dmytrosylyvonchyk/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/vboxuser/Documents/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
