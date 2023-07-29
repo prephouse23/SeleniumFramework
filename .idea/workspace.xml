@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70062fc9-b9dc-4371-8c73-e74b7c248568" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/BestBuyMainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/BestBuySearchResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/BestBuySearchResultTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/SignInTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runner/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/BaseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/BaseMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/BaseMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/SignInPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/DataStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/DataStoragePractise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/DriverInteractions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/FirstTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/JavaAndSeleniumPractise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/JavaMethodsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/LoginTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NkKAbdG75xKk2jOnpHgYKqSZhN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/dmytrosylyvonchyk/Documents/GitHub/SeleniumFramework/src/test/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dsyly\OneDrive\Documents\GitHub\SeleniumFramework\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.BestBuySearchResultTest.e2">
+    <configuration name="BestBuySearchResultTest.e2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.BestBuySearchResultTest" />
+      <option name="METHOD_NAME" value="e2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestBuySearchResultTest.e2e" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.BestBuySearchResultTest" />
+      <option name="METHOD_NAME" value="e2e" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.fillEmailAndPasswordFieldsAndPressEnter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.FirstTest" />
+      <option name="METHOD_NAME" value="fillEmailAndPasswordFieldsAndPressEnter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginFuntionalityValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginTest" />
+      <option name="METHOD_NAME" value="loginFuntionalityValidation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignInTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.SignInTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.BestBuySearchResultTest.e2" />
+      <item itemvalue="TestNG.SignInTest.test" />
+      <item itemvalue="TestNG.BestBuySearchResultTest.e2e" />
+      <item itemvalue="TestNG.FirstTest.fillEmailAndPasswordFieldsAndPressEnter" />
+      <item itemvalue="TestNG.LoginTest.loginFuntionalityValidation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.BestBuySearchResultTest.e2" />
+        <item itemvalue="TestNG.BestBuySearchResultTest.e2e" />
+        <item itemvalue="TestNG.FirstTest.fillEmailAndPasswordFieldsAndPressEnter" />
+        <item itemvalue="TestNG.SignInTest.test" />
+        <item itemvalue="TestNG.LoginTest.loginFuntionalityValidation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70062fc9-b9dc-4371-8c73-e74b7c248568" name="Changes" comment="" />
+      <created>1680202499099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680202499099</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/JavaAndSeleniumPractise.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/BestBuySearchResultTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
