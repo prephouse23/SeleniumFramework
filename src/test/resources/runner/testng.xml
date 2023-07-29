@@ -3,10 +3,10 @@
 <suite name="MyFork Web test Suit" parallel="classes"  thread-count="3" >
     <test name="Health Check">
         <classes>
-<class name="testcases.BestBuySearchResultTest"/></class>
-<class name="testcases.JavaAndSeleniumPractise"/>
+<class name="testcases.BestBuySearchResultTest"></class>
+<class name="testcases.JavaAndSeleniumPractise"></class>
 
-            </class>
+            
         </classes>
     </test>
 </suite>
