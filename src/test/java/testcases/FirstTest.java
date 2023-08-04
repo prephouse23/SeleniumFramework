@@ -2,15 +2,9 @@ package testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageobjects.HomePage;
-import pageobjects.SignInPage;
 
 import java.time.Duration;
 
@@ -22,36 +16,38 @@ public class FirstTest extends BaseTest{
     String urlBankOfAmerica = "https://secure.bankofamerica.com/secure-mycommunications/public/appointments/?marketingCode=NEWHP_ECHMPG";
     String btnAccount = "//span[text()='Account']";
     String btnSignIn = "//a[@data-lid='ubr_mby_signin_b']";
-    
 
-    @Test
-    public void openSignInPage() throws InterruptedException {
+    @Test ( groups = "login")
+    public void signin() throws InterruptedException {
 
         homePage.clickSignIn();
     }
 
-    @Test
+    @Test ( groups = "login")
+    public void singInWithDifferentData(){
+        signInPage.fillTheSignInForm("username1", "password1");
+    }
+
+    @Test (priority = 1, groups = "data")
     public void fillEmailAndPasswordFields() throws InterruptedException {
 
         homePage.clickSignIn();
-        signInPage.fillTheSignInForm();
+        signInPage.fillTheSignInForm("Admin@test.com", "password$55");
+        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(20));
+        waitForDropdownToLoad.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Create Account']")));
+        driver.findElement(By.xpath(btnSignIn)).click();
     }
-    @Test
+
+    @Test ( groups = "login")
     public void fillEmailAndPasswordFieldsAndPressEnter() {
 
         driver.get(urlBestBuy);
 
         driver.findElement(By.xpath(btnAccount)).click();
-        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(20));
-        waitForDropdownToLoad.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Create Account']")));
-        driver.findElement(By.xpath(btnSignIn)).click();
+        signInPage.fillTheSignInForm("user4567890", "hkjlmlskp");
 
-        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("email@sdd.ut");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("password");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(Keys.ENTER);
     }
-
-    @Test
+    @Test (priority = 2)
     public void fillEmailAndPasswordFieldsAndValidateError() throws InterruptedException {
 
         driver.get(urlBestBuy);
@@ -67,7 +63,7 @@ public class FirstTest extends BaseTest{
         System.out.println(driver.findElement(By.xpath("//div[@aria-label='Error']")).isDisplayed());
     }
 
-    @Test
+    //@Test
     public void fillEmailAndPasswordFieldsAndValidateCheckbox() throws InterruptedException {
         driver.get(urlBestBuy);
 
@@ -77,7 +73,7 @@ public class FirstTest extends BaseTest{
         System.out.println(driver.findElement(By.id("cia-remember-me")).isSelected());
     }
 
-    @Test
+    //@Test
     public void verifyCheckboxText() throws InterruptedException {
 
         driver.get(urlBestBuy);
@@ -88,7 +84,7 @@ public class FirstTest extends BaseTest{
         System.out.println(driver.findElement(By.xpath("//label[@for='cia-remember-me']")).getText());
     }
 
-    @Test
+   // @Test
     public void isEnabled() throws InterruptedException {
 
         driver.get(urlBankOfAmerica);

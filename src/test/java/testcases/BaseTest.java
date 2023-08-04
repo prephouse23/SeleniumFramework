@@ -1,46 +1,93 @@
 package testcases;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
-import org.openqa.selenium.devtools.v85.network.model.ConnectionType;
-import org.openqa.selenium.remote.CommandExecutor;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import pageobjects.BaseMain;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import pageobjects.BestBuyMainPage;
+import pageobjects.BestBuySearchResultsPage;
 import pageobjects.HomePage;
 import pageobjects.SignInPage;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
-import java.util.Optional;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Logger;
 
 public class BaseTest {
 
-    WebDriver driver;
+    public RemoteWebDriver driver;
     HomePage homePage;
     SignInPage signInPage;
+    BestBuyMainPage bestBuyMainPage;
+    BestBuySearchResultsPage bestBuySearchResultsPage;
+    Logger log;
 
 
-    @BeforeTest
-    public void startDriver() {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dsyly\\IdeaProjects\\TestProject\\src\\test\\resources\\executables\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dsyly\\OneDrive\\Documents\\GitHub\\SeleniumFramework\\src\\test\\resources\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(options);
-        homePage = new HomePage(driver);
-        signInPage = new SignInPage(driver);
+    @BeforeMethod(groups = "ownerRole, releaseSeptember, adminRole, participantRole, login")
+    @Parameters("browser")
+    public void startDriver(@Optional("sauce-edge") String browser) throws MalformedURLException {
+        
+//        if(browser.equalsIgnoreCase("chrome")){
+             driver = new ChromeDriver();
+
+//        } else if (browser.equalsIgnoreCase("firefox")) {
+//            System.setProperty("webdriver.gecko.driver", "/Users/dmytrosylyvonchyk/Documents/geckodriver");
+//            driver = new FirefoxDriver();
+//        } else if (browser.equalsIgnoreCase("sauce-chrome")) {
+//
+//            ChromeOptions browserOptions = new ChromeOptions();
+//            browserOptions.setPlatformName("Windows 11");
+//            browserOptions.setBrowserVersion("latest");
+//
+//            Map<String, Object> sauceOptions = new HashMap<>();
+//            sauceOptions.put("username", "oauth-dsylyvonchyk-edff2");
+//            sauceOptions.put("accessKey", "4b5a296b-d45d-4c89-8103-731e9510bbe9");
+//            sauceOptions.put("build", "selenium-build-NTJNK");
+//            sauceOptions.put("name", "First Sauce Test");
+//            browserOptions.setCapability("sauce:options", sauceOptions);
+//
+//            URL url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
+//            driver = new RemoteWebDriver(url, browserOptions);
+//
+//        } else if (browser.equalsIgnoreCase("sauce-edge")) {
+//
+//            EdgeOptions browserOptions = new EdgeOptions();
+//            browserOptions.setPlatformName("Windows 10");
+//            browserOptions.setBrowserVersion("latest-1");
+//            Map<String, Object> sauceOptions = new HashMap<>();
+//            sauceOptions.put("username", "oauth-dsylyvonchyk-edff2");
+//            sauceOptions.put("accessKey", "4b5a296b-d45d-4c89-8103-731e9510bbe9");
+//            sauceOptions.put("build", "Build 2103");
+//            sauceOptions.put("name", "Edge execution");
+//            browserOptions.setCapability("sauce:options", sauceOptions);
+//
+//            URL url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
+//            driver = new RemoteWebDriver(url, browserOptions);
+//
+//        }else {
+//            System.out.println("Correct browser name was not found, please check again");
+//        }
+
+        homePage = new HomePage(driver, log);
+        signInPage = new SignInPage(driver, log);
+        bestBuyMainPage = new BestBuyMainPage(driver);
+        bestBuySearchResultsPage = new BestBuySearchResultsPage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
-    @AfterTest
+    @AfterMethod(groups = "ownerRole, releaseSeptember, adminRole, participantRole")
     public void closeBrowser() {
-//        driver.quit();
+
+        if(driver!=null){ driver.quit();}
     }
 
 }

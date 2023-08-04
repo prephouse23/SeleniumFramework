@@ -49,7 +49,7 @@ public class JavaMethodsTest extends BaseTest{
         int age22 = 22;
 
 
-        System.out.println("my username is "+ name +" and my age is " + age22);
+        System.out.println("my username is "+ name +" and my age is 22" + age22);
 
 
 

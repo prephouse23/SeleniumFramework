@@ -1,12 +1,13 @@
 package pageobjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.util.logging.Logger;
 
 
 public class HomePage extends BaseMain{
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver, Logger log){
         super(driver);
     }
 
@@ -16,8 +17,19 @@ public class HomePage extends BaseMain{
 
     public void clickSignIn() throws InterruptedException {
         driver.get(urlBestBuy);
-        driver.findElement(By.xpath(btnAccount)).click();
+        clickUsingXpath(btnAccount, "account button");
         Thread.sleep(5000);
-        driver.findElement(By.xpath(btnSignIn)).click();
+        clickUsingXpath(btnSignIn, "sign in button ");
     }
+
+    public int testParameters(int math, int eng, int art ){
+        int averageGrade = (math + eng + art ) /3;
+        return averageGrade;
+    }
+
+
+
+
+
+
 }

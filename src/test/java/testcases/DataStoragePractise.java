@@ -1,11 +1,13 @@
 package testcases;
 
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DataStoragePractise {
+public class DataStoragePractise  extends BaseTest{
 
     public static void main(String[] args) {
         int[] array = new int[3];
@@ -49,6 +51,15 @@ public class DataStoragePractise {
         friendsWithProfessions.remove("Adam");
         System.out.println(friendsWithProfessions);
         System.out.println(friendsWithProfessions.size());
+
+    }
+
+    @Test
+    public void testGrade(){
+        System.out.println("Maria average grade is "  + homePage.testParameters(100, 78, 92));
+        System.out.println("Alex average grade is "  + homePage.testParameters(90, 76, 99));
+        System.out.println("Kate average grade is "  + homePage.testParameters(77, 78, 88));
+        System.out.println("Jordan average grade is "  + homePage.testParameters(90, 70, 21));
 
     }
 
