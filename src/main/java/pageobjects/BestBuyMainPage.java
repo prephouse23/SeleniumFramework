@@ -9,8 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class BestBuyMainPage extends BaseMain{
     public BestBuyMainPage(WebDriver driver) {
@@ -85,6 +84,31 @@ public class BestBuyMainPage extends BaseMain{
     public void searchFor(String query){
         driver.findElement(searchField).sendKeys(query);
         driver.findElement(searchButton).click();
+        
+    }
+
+    public List<String> fillTextFields(){
+        // username(0), password(1), fullName, email(3), address
+        List<String> actualValues = Arrays.asList("asdf", "dscasdc", "skadjc", "asdkjcnaskd", "acisdbciasd");
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get(0));//username
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get(1));//password
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get(2));
+        return actualValues;
+
+    }
+
+    public Map<String, String> fillText(){
+        Map<String,String> actualValues = new HashMap<>();
+        actualValues.put("username", "akjsdnvlas");
+        actualValues.put("password", "kdfjv nkwn");
+        actualValues.put("fullName", "kdfjv nkwnkasjbdv");
+        actualValues.put("email", "oasind@sn.dd");
+        actualValues.put("address", "olkadf vl;ad");
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get("username"));
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get("password"));
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get("fullName"));
+        driver.findElement(By.xpath("")).sendKeys(actualValues.get("email"));
+        return actualValues;
     }
 
 

@@ -3,12 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 
 public class BestBuySearchResultsPage extends BaseMain{
     public BestBuySearchResultsPage(WebDriver driver) {
@@ -20,6 +19,8 @@ public class BestBuySearchResultsPage extends BaseMain{
     private By customerPriceTag = By.xpath("//div[@data-testid='large-price']//div[@data-testid='customer-price']");
     private By cartSubtotalText = By.xpath("//div[@class='sub-total v-fw-medium']");
     private By cartSubtotalWindowCloseButton = By.xpath("//button[@data-track='Attach Modal: Close']");
+    By menuOptions = By.xpath("//div[@class='bottom-nav-left-wrapper']/ul/li/a");
+
     public String searchItemTitleText(int searchResultRow){
         return driver.findElements(searchItemTitle).get(searchResultRow).getText();
     }
@@ -69,15 +70,14 @@ public class BestBuySearchResultsPage extends BaseMain{
         driver.findElement(cartSubtotalWindowCloseButton).click();
     }
 
-
     By rows = By.xpath("//table/tbody/tr");
     By teamsLocator = By.xpath("//table/tbody/tr[5]//td[2]//a");
 
     public void aa() {
-
-        driver.get("https://www.hltv.org/stats/players");
+        String todaysDate = "8/10/23";
+        driver.get("https://www.hltv.org/stats/players-" + todaysDate);
         driver.findElement(By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")).click();
-        Map <String, List<String>> players = new HashMap<>();
+        Map<String, List<String>> players = new HashMap<>();
         System.out.println(driver.findElements(rows).size());
         for (int i = 1;i<(driver.findElements(rows).size()-10);i++){
             System.out.println(i);
@@ -91,5 +91,15 @@ public class BestBuySearchResultsPage extends BaseMain{
         }
         System.out.println(players);
 
+    }
+
+    List<String> expected = Arrays.asList("Top Deals", "Deal of the Day", "My Best Buy Memberships", "Credit Cards", "Best Buy Outlet", "Gift Cards", "", "", "");
+    public void menuOptionsVerification(){
+        List<WebElement> menuOptionsElements = driver.findElements(menuOptions);
+        List<String> menuOptionsTexts = new ArrayList<>();
+        for (WebElement menuOptionsElement : menuOptionsElements) {
+            menuOptionsTexts.add(menuOptionsElement.getText());
+        }
+        Assert.assertEquals(menuOptionsTexts,expected);
     }
 }

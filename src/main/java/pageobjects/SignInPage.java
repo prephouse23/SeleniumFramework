@@ -21,8 +21,7 @@ public class SignInPage extends BaseMain{
     String passwordValue = "password";
 
     public void fillTheSignInForm(String username, String password){
-        driver.findElement(By.xpath(inputEmail)).sendKeys(emailValue);
+        driver.findElement(By.xpath(inputEmail)).sendKeys(username);
         driver.findElement(By.xpath(inputPassword)).sendKeys(password);
-        driver.findElement(By.xpath(btnLogin)).submit();
     }
 }

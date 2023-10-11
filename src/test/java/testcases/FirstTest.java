@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,6 +23,15 @@ public class FirstTest extends BaseTest{
 
         homePage.clickSignIn();
     }
+    @Test
+    public void ss() throws InterruptedException {
+
+        driver.get("https://www.amazon.com/Barbie-Camping-Backpack-Sleeping-Accessories/dp/B09BW2L2RF/ref=sr_1_3?crid=3CLSBSXKDOXOF&keywords=barbie+doll&qid=1695242202&sprefix=barbie+doll%2Caps%2C151&sr=8-3");
+        Thread.sleep(2000);
+        System.out.println(driver.findElement(By.xpath("//div[@id='apex_desktop_qualifiedBuybox']//div[@id='corePriceDisplay_desktop_feature_div']/div/span[2]/span[@class='a-offscreen']")).getAttribute("textContent"));
+//        JavascriptExecutor j = ((JavascriptExecutor) driver).executeScript(
+//                "return jQuery(arguments[0]).text();", driver.findElement(By.xpath("//div[@id='apex_desktop_qualifiedBuybox']//div[@id='corePriceDisplay_desktop_feature_div']/div/span[2]/span[@class='a-offscreen']"));
+    }
 
     @Test ( groups = "login")
     public void singInWithDifferentData(){
@@ -33,8 +43,6 @@ public class FirstTest extends BaseTest{
 
         homePage.clickSignIn();
         signInPage.fillTheSignInForm("Admin@test.com", "password$55");
-        WebDriverWait waitForDropdownToLoad = new WebDriverWait(driver,Duration.ofSeconds(20));
-        waitForDropdownToLoad.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Create Account']")));
         driver.findElement(By.xpath(btnSignIn)).click();
     }
 

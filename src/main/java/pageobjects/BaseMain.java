@@ -3,6 +3,7 @@ package pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.logging.Logger;
 
@@ -14,7 +15,6 @@ public class BaseMain {
     public BaseMain (WebDriver driver){
         this.driver = driver;
 //        this.log = log;
-
     }
 
     public void scrollBy(int pixels){
@@ -26,6 +26,11 @@ public class BaseMain {
         driver.findElement(By.xpath(xpath)).click();
         System.out.println("Element: " + elementName + " was clicked successfully");
 
+    }
+
+    public void priceReduced(WebElement element){
+        scrollBy(2000);
+        String price = element.getText();
     }
 
 }

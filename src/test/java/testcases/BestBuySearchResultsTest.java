@@ -19,6 +19,37 @@ public class BestBuySearchResultsTest extends BaseTest{
 
     @Test
     public void s(){
-        bestBuySearchResultsPage.aa();
+        bestBuyMainPage.openMainPage();
+        bestBuySearchResultsPage.menuOptionsVerification();
+    }
+
+    @Test
+    public void dd(){
+        String initial = "21 cars";
+        System.out.println(initial.substring(3));
+        System.out.println(initial.substring(0,2));
+        System.out.println(initial.indexOf(" "));
+        System.out.println("----------------------");
+        char first = '2';
+        char second = '1';
+        char third = ' ';
+        initial = "321 cars";
+        System.out.println(initial.substring(0,2));
+        System.out.println(initial.indexOf("s"));
+        System.out.println(initial.indexOf(" "));
+        System.out.println("=======================");
+        int index = initial.indexOf(" ");
+        System.out.println(initial.substring(0,index));
+
+
+        System.out.println("++++++++++++++++++");
+        initial = "4321 cars";
+        index = initial.indexOf(" ");
+        System.out.println(initial.substring(0,index));
+        System.out.println("------------");
+        for (int i = 10; i < 15;i++) {
+            System.out.println(initial + " are parked at spot " + i);
+        }
+
     }
 }
